@@ -11,7 +11,7 @@ const instance = axios.create({
 export const api = {
 
     getPhotos() {
-        return instance.get(`/photos` + API_KEY).then((response) => {
+        return instance.get(`/photos` + API_KEY+"&per_page=30").then((response) => {
 
             return response.data
         });
