@@ -1,9 +1,9 @@
 import {applyMiddleware, combineReducers, compose, createStore} from "redux";
-import PhotosReducer from "./Components/PhotosReducer";
+import WeatherReducer from "./WeatherReducer";
 import thunkMiddleware from "redux-thunk"
 
 let reducers = combineReducers({
-    photosTree: PhotosReducer,
+    weatherTree: WeatherReducer,
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

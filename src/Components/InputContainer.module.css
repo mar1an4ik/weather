@@ -1,0 +1,51 @@
+
+.main {
+    text-align: center;
+}
+
+.options {
+    background: url(https://media.npr.org/assets/img/2020/04/03/gettyimages-1057990750-f0cc5df6a4671daa28f234107d65058e2663db87-s800-c85.jpg) no-repeat center center fixed;
+
+    background-size: cover;
+}
+
+.inputCity {
+    opacity: 0.8;
+    height: 50px;
+    width: 180px;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: auto;
+    outline: none;
+}
+
+.inputCity:focus {
+    opacity: 1;
+}
+
+
+.gpsIcon {
+
+    width: 100px;
+    height: 90px;
+
+    cursor: pointer;
+    transform: translateY(25px);
+
+}
+
+.findBtn {
+    outline: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.findBtn:hover {
+    opacity: 1;
+}

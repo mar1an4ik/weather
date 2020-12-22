@@ -1,21 +1,28 @@
 import * as axios from "axios";
 
-const API_KEY = "?client_id=s1a2lQWYDTYcKQJCnT8LcbnpXpplHNA2am8DEqTpsUc";
+const ACCESS_KEY = "?APPID=d951923c19e1f20280a668a0cce67fcb";
+
 
 const instance = axios.create({
-
-    baseURL: "https://api.unsplash.com",
-
+    baseURL: "http://api.openweathermap.org/data/2.5",
 });
 
 export const api = {
 
-    getPhotos() {
-        return instance.get(`/photos` + API_KEY+"&per_page=30").then((response) => {
+    getCurWeatherCity(city) {
+        return instance.get(`/weather` + ACCESS_KEY+"&q="+city).then((response) => {
 
             return response.data
-        });
+        });},
+    getCurWeatherGPS(lat,lon) {
+        return instance.get(`/weather`+ACCESS_KEY+"&lat="+lat+"&lon="+lon).then((response) => {
 
-    },
+            return response.data
+        });},
+    setForecast(lat,lon) {
+        return instance.get(`/onecall`+ACCESS_KEY+"&lat="+lat+"&lon="+lon).then((response) => {
+
+            return response.data.daily
+        });},
 
 };

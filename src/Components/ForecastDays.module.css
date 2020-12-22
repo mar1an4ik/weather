@@ -1,0 +1,30 @@
+.info {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+body {
+    background: url(https://mocah.org/thumbs/124416-miui-8-rainy-weather-background-minimal-hd.png) no-repeat center center fixed;
+
+
+    background-size: cover;
+}
+
+.firstColumn {
+    text-align: left;
+}
+
+.secondColumn {
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+body {
+    font-size: 20px;
+    font-family: Arial;
+}
