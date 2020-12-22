@@ -4,7 +4,7 @@ const ACCESS_KEY = "?APPID=d951923c19e1f20280a668a0cce67fcb";
 
 
 const instance = axios.create({
-    baseURL: "http://api.openweathermap.org/data/2.5",
+    baseURL: "https://api.openweathermap.org/data/2.5",
 });
 
 export const api = {
